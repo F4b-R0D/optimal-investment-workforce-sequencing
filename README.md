@@ -1,6 +1,6 @@
 # Optimal Investment Sequencing
 
-A reproducible research project for ex ante investment planning under labour, capacity, budget, and timing constraints.
+A reproducible **ex ante investment-planning and operations-research project** for selecting the timing and scale of investments under labour, capacity, budget, and project constraints.
 
 ## Core idea
 
@@ -30,6 +30,12 @@ Find the timing and magnitude of investments that produce a smoother and more su
 
 Initial applications may focus on electricians, trades, operators, engineers, and other occupations relevant to remote and northern development.
 
+## Computational workflow
+
+The project is **Jupyter-first**. Jupyter Notebook / JupyterLab is the primary environment for data construction, exploratory analysis, model prototyping, scenario analysis, optimization runs, and reproducible results.
+
+Reusable functions should migrate from notebooks into the `src/` modules as the project matures.
+
 ## Repository structure
 
 - `data/raw/` — original source data
@@ -40,7 +46,7 @@ Initial applications may focus on electricians, trades, operators, engineers, an
 - `src/labour_supply/` — labour-force and occupational supply paths
 - `src/optimization/` — optimization model and constraints
 - `src/scenarios/` — alternative investment and policy scenarios
-- `notebooks/` — exploratory analysis and prototypes
+- `notebooks/` — reproducible Jupyter notebooks
 - `outputs/figures/` — figures
 - `outputs/tables/` — tables
 - `outputs/model_runs/` — optimization results
@@ -58,6 +64,21 @@ Initial applications may focus on electricians, trades, operators, engineers, an
 6. Workforce, budget, precedence, and capacity constraints
 7. Objective functions for employment smoothing, shortages, FIFO reliance, and economic value
 8. Scenario and sensitivity analysis
+
+## Reproducibility
+
+The preferred workflow is:
+
+1. raw data ingestion in Jupyter;
+2. harmonization and validation;
+3. reusable transformations in `src/`;
+4. scenario construction;
+5. optimization;
+6. export of figures, tables, and model runs.
+
+## License
+
+This project is released under the **MIT License**. See `LICENSE`.
 
 ## Status
 
