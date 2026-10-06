@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local / sensitive data
+.env
+data/raw/*
+!data/raw/.gitkeep
+
+# Large generated outputs
+outputs/model_runs/*
+!outputs/model_runs/.gitkeep
