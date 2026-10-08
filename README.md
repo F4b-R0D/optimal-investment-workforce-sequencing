@@ -1,6 +1,11 @@
-# Optimal Investment Sequencing
+# Dynamic Investment Programming
 
-A reproducible **ex ante investment-planning and operations-research project** for selecting the timing and scale of investments under labour, capacity, budget, and project constraints.
+A reproducible **dynamic investment programming and operations-research project** for selecting the timing and scale of investments under labour, capacity, budget, and project constraints.
+
+## Modules
+
+- **Investment & Workforce Sequencing** — timing and scale of investments under workforce, budget, and capacity constraints (documented below).
+- **[Optimal Replacement Model](optimal-replacement-model/)** — dynamic asset maintenance and replacement decisions under uncertainty, using value-function iteration and nested fixed-point concepts.
 
 ## Core idea
 
@@ -38,6 +43,7 @@ Reusable functions should migrate from notebooks into the `src/` modules as the 
 
 ## Repository structure
 
+- `optimal-replacement-model/` — dynamic programming module for asset replacement
 - `data/raw/` — original source data
 - `data/interim/` — cleaned or harmonized intermediate data
 - `data/processed/` — analysis-ready datasets
